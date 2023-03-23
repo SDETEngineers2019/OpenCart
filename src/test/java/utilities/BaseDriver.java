@@ -28,7 +28,7 @@ public class BaseDriver {
 
     public static void quitDriver() {
         if (driver != null) { // if there is driver the quit
-            driver.quit();
+//            driver.quit();
             driver = null; // if there is not this line then failed coz after quit driver must be null again to open
         }
     }
