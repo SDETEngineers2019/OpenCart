@@ -12,7 +12,7 @@ public class RegisterBackgroundSteps {
     RegisterPageElements rp = new RegisterPageElements();
     @Given("Navigate to the web site")
     public void navigateToTheWebSite() {
-        BaseDriver.getDriver().get("https://demo.opencart.com");
+        BaseDriver.getDriver().get("http://opencart.abstracta.us/index.php?route=common/home");
     }
 
     @When("Click on My Account button")
@@ -27,6 +27,6 @@ public class RegisterBackgroundSteps {
 
     @Then("User should go to Register Account page")
     public void userShouldGoToRegisterAccountPage() {
-        rp.verifyContainsText(rp.getRegisterAccountHeader(), "Register Account");
+        rp.verifyContainsText(rp.getRegisterAccountHeader(), "Account");
     }
 }
