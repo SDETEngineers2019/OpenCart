@@ -51,4 +51,15 @@ public class MyMethods {
         Assert.assertTrue(element.isSelected(), "Test is failed");
     }
 
+    public void isDisplayed(WebElement element){
+        waitUntilVisible(element);
+        Assert.assertTrue(element.isDisplayed());
+    }
+    public void verifyURL(String value){
+        Assert.assertTrue(BaseDriver.getDriver().getCurrentUrl().contains(value));
+    }
+
+    public void verifyTitle(String value){
+        Assert.assertTrue(BaseDriver.getDriver().getTitle().contains(value));
+    }
 }
