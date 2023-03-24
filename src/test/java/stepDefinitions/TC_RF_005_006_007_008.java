@@ -54,7 +54,7 @@ public class TC_RF_005_006_007_008 {
 
     @Then("Yes option should be displayed as selected")
     public void yesOptionShouldBeDisplayedAsSelected() {
-        Assert.assertTrue(elements.getYesRadioButton().isSelected());
+        elements.verifyIsSelected(elements.getYesRadioButton());
     }
 
     @When("Click on No radio option for Newsletter")
@@ -64,7 +64,7 @@ public class TC_RF_005_006_007_008 {
 
     @Then("No option should be displayed as selected")
     public void noOptionShouldBeDisplayedAsSelected() {
-        Assert.assertTrue(rp.getNewsLetterAndPrivacyRadioButton().isSelected());
+        elements.verifyIsSelected(rp.getNewsLetterAndPrivacyRadioButton());
     }
 
     @And("Click on Login option")
