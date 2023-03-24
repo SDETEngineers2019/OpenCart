@@ -29,3 +29,23 @@ Feature: Register
       | pavanol@       |
       | pavanol@gmail. |
       | pavanol@gmail  |
+
+  @TestInvalidPhoneNumber
+  Scenario Outline: Invalid Phone Number
+    When Enter existing First Name as "Jack" and Last Name as "Sparrow"
+    When Enter existing EMail as "pavanoltraining1234@gmail.com"
+    When Enter existing Phone Number as "<PhoneNumber>"
+    When Enter existing Password as "12345" and Confirm as "12345"
+    And Click on Continue button
+    Then Invalid Phone Number error message should be displayed
+    Examples:
+      | PhoneNumber |
+      | 111         |
+      | abcde       |
+
+  @TestWithKeyboardKeys
+  Scenario: Existing Account Details with Keyboard Keys
+    When Fill in the registration form
+    And Click on Continue button
+    Then Already registered error message should be displayed
+

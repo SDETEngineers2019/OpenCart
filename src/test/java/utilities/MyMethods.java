@@ -6,11 +6,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.awt.*;
 import java.time.Duration;
 
 public class MyMethods {
 
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(10));
+    Robot robot;
+
     public void sendKeysMethod(WebElement element, String keys){
         waitUntilVisible(element);
         scrollToElement(element);
