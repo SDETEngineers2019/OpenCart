@@ -5,6 +5,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.ElementsForTC_009_010_011_012;
 import pages.RegisterPageElements;
+import org.openqa.selenium.Alert;
+import org.testng.Assert;
+import utilities.BaseDriver;
 
 public class TC_RF_009_010_011_012 {
     RegisterPageElements rp = new RegisterPageElements();
