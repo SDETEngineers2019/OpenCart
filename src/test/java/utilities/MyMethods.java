@@ -42,4 +42,13 @@ public class MyMethods {
         Assert.assertTrue(element.getText().contains(value));
     }
 
+    public void verifyContainsStringText(String actualValue, String expectedValue){
+        Assert.assertTrue(actualValue.contains(expectedValue));
+    }
+
+    public void verifyIsSelected(WebElement element){
+        waitUntilVisible(element);
+        Assert.assertTrue(element.isSelected(), "Test is failed");
+    }
+
 }
