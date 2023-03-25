@@ -1,4 +1,4 @@
-package stepDefinitions.Sevgi;
+package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import pages.RegisterPageElement_Sevgi;
