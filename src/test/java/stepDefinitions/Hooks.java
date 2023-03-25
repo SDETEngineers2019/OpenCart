@@ -7,8 +7,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.BaseDriver;
 
-import java.io.IOException;
-
 public class Hooks {
 
     @Before // This method runs before every scenario

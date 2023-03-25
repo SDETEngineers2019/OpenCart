@@ -68,7 +68,6 @@ public class MyMethods {
         Assert.assertTrue(BaseDriver.getDriver().getTitle().contains(value));
     }
 
-
     // I made some space so if someone wants to add something it wont be a conflict -Burak
     public WebElement createInputElementByCss(String value) {
         return BaseDriver.getDriver().findElement(By.cssSelector("input[name='" + value + "']"));
@@ -82,3 +81,6 @@ public class MyMethods {
         return RandomStringUtils.randomNumeric(12);
     }
 }
+
+}
+
