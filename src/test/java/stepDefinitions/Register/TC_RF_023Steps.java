@@ -1,12 +1,12 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import pages.RegisterPageElement_Sevgi;
-import pages.RegisterPageElements;
+import pages.Register.RegisterPageElement_Sevgi;
+import pages.Register.RegisterPageElements;
 import utilities.BaseDriver;
 
 public class TC_RF_023Steps {

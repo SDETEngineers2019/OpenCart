@@ -1,12 +1,10 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
-import pages.ElementsForTC_RF_005_006_007_008;
-import pages.RegisterPageElements;
+import pages.Register.ElementsForTC_RF_005_006_007_008;
+import pages.Register.RegisterPageElements;
 
 public class TC_RF_005_006_007_008 {
 

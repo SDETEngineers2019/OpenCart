@@ -1,9 +1,9 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
-import pages.RegisterPageElements;
+import pages.Register.RegisterPageElements;
 
 public class TC_RF_013 {
     RegisterPageElements rp = new RegisterPageElements();
