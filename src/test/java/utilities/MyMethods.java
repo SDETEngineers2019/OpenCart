@@ -16,7 +16,7 @@ public class MyMethods {
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(10));
     Robot robot;
 
-    public void sendKeysMethod(WebElement element, String keys) {
+    public void sendKeysMethod(WebElement element, String keys){
         waitUntilVisible(element);
         scrollToElement(element);
         element.clear();
