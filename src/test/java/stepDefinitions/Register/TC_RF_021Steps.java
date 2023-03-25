@@ -13,24 +13,6 @@ public class TC_RF_021Steps {
     RegisterPageElements rp = new RegisterPageElements();
     RegisterPageElement_Sevgi rps= new RegisterPageElement_Sevgi();
 
-    @Given("Fill out all the fields")
-    public void fill_out_all_the_fields() {
-//
-//        try {
-//            Thread.sleep(3000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//
-//        rps.sendKeysMethod(rps.getRegisterFirstNameInput(),"Sam");
-//   rps.sendKeysMethod(rps.getRegisterLastNameInput(),"Jhonny");
-//   rps.sendKeysMethod(rps.getRegisterEmailInput(),"Sam123@com");
-//   rps.sendKeysMethod(rps.getTelephoneBtn(),"1234566");
-//   rps.sendKeysMethod(rps.getRegisterPasswordInput(),"123qwe");
-//   rps.sendKeysMethod(rps.getRegisterPasswordConfirm(),"123qwe");
-//
-
-    }
     @When("Click on the Continue Button")
     public void click_on_the_continue_button() {
 
@@ -41,11 +23,8 @@ public class TC_RF_021Steps {
     }
     @Then("user should be Warning Text")
     public void user_should_be_warning_text() {
-        waitUntilVisible(rps.getWarningText());
+        rps.waitUntilVisible(rps.getWarningText());
     Assert.assertTrue(rps.getWarningText().isDisplayed());
-    }
-
-    private void waitUntilVisible(WebElement warningText) {
     }
 
 

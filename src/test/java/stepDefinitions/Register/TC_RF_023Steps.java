@@ -3,11 +3,15 @@ package stepDefinitions.Register;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import pages.Register.RegisterPageElement_Sevgi;
 import pages.Register.RegisterPageElements;
 import utilities.BaseDriver;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TC_RF_023Steps {
     RegisterPageElements rp = new RegisterPageElements();
@@ -32,21 +36,17 @@ public class TC_RF_023Steps {
     public void click_right_column_options() {
         rps.scrollToElement(rp.getMyAccountButton());
 
-        for (WebElement element: rps.getRightColumnBtn()){
-            rps.clickMethod(element);
+        for (int i = 0; i < rps.getRightColumnBtn().size(); i++) {
+            rps.getRightColumnBtn().get(i).click();
         }
 
-
-
-
     }
+
     @When("Menu Options")
     public void menu_options() {
         for (WebElement element: rps.getMenuOption1()) {
             rps.clickMethod(element);
             BaseDriver.getDriver().navigate().back();
-
-
         }
 
     }
