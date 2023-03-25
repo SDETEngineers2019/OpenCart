@@ -1,10 +1,9 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.testng.Assert;
-import pages.RegisterPageElements;
-import pages.SuccessfullRegisterElement;
+import pages.Register.RegisterPageElements;
+import pages.Register.SuccessfullRegisterElement;
 
 public class TC_RF_19_ {
 

@@ -1,10 +1,8 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.And;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import pages.ElementsForTC_RF_014;
-import pages.RegisterPageElements;
+import pages.Register.ElementsForTC_RF_014;
 
 public class TC_RF_014 {
 

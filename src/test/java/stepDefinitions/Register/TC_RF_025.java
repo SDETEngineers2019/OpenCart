@@ -1,7 +1,7 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.Then;
-import pages.ElementsForTC_RF_025;
+import pages.Register.ElementsForTC_RF_025;
 
 public class TC_RF_025 {
     @Then("The Breadcrumb, Page Heading, Page URL, Page Title of Register Account Page should be displayed")

@@ -1,14 +1,12 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
-import pages.ElementsForTC_009_010_011_012;
-import pages.RegisterPageElements;
-import org.openqa.selenium.Alert;
+import pages.Register.ElementsForTC_009_010_011_012;
+import pages.Register.RegisterPageElements;
 import org.testng.Assert;
-import utilities.BaseDriver;
 
 import java.awt.*;
 

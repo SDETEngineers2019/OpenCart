@@ -1,9 +1,9 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.RegisterPageElements;
+import pages.Register.RegisterPageElements;
 import utilities.BaseDriver;
 
 import java.util.List;

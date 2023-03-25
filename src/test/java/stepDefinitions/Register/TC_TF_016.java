@@ -1,10 +1,10 @@
-package stepDefinitions;
+package stepDefinitions.Register;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-import pages.ElementsForTC_RF_016;
-import pages.RegisterPageElements;
+import pages.Register.ElementsForTC_RF_016;
+import pages.Register.RegisterPageElements;
 
 public class TC_TF_016 {
 

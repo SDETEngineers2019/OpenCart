@@ -1,4 +1,4 @@
-package pages;
+package pages.Register;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
