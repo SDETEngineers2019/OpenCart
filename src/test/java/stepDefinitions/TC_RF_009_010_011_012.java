@@ -3,11 +3,14 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Keys;
 import pages.ElementsForTC_009_010_011_012;
 import pages.RegisterPageElements;
 import org.openqa.selenium.Alert;
 import org.testng.Assert;
 import utilities.BaseDriver;
+
+import java.awt.*;
 
 public class TC_RF_009_010_011_012 {
     RegisterPageElements rp = new RegisterPageElements();
@@ -68,5 +71,22 @@ public class TC_RF_009_010_011_012 {
         else {
             rp.verifyContainsText(eft.getWarningMessageForInvalidEmail(), "E-Mail Address does not appear to be valid!");
         }
+    }
+
+    @Then("Invalid Phone Number error message should be displayed")
+    public void invalidPhoneNumberErrorMessageShouldBeDisplayed() {
+        Assert.fail();
+        Assert.assertEquals(null, "Invalid phone number");
+    }
+
+    @When("Fill in the registration form")
+    public void fillInTheRegistrationForm() throws AWTException {
+
+        rp.sendKeysMethod(rp.getRegisterFirstNameInput(), "Pavan" +
+                Keys.TAB + "B" +
+                Keys.TAB + "pavanoltraining@gmail.com" +
+                Keys.TAB + "814240XXXX" +
+                Keys.TAB + "12345" +
+                Keys.TAB + "12345");
     }
 }
