@@ -47,7 +47,7 @@ public class MyMethods {
         Assert.assertTrue(element.getText().contains(value));
     }
 
-    public void verifyContainsStringText(String actualValue, String expectedValue) {
+    public void verifyContainsStringText(String actualValue, String expectedValue){
         Assert.assertTrue(actualValue.contains(expectedValue));
     }
 
@@ -61,11 +61,11 @@ public class MyMethods {
         Assert.assertTrue(element.isDisplayed());
     }
 
-    public void verifyURL(String value) {
+    public void verifyURL(String value){
         Assert.assertTrue(BaseDriver.getDriver().getCurrentUrl().contains(value));
     }
 
-    public void verifyTitle(String value) {
+    public void verifyTitle(String value){
         Assert.assertTrue(BaseDriver.getDriver().getTitle().contains(value));
     }
 
