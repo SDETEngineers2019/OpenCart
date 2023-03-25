@@ -46,6 +46,12 @@ public class RegisterPageElements extends MyMethods {
     @FindBy(css = "input[value='Continue']")
     private WebElement registerContinueButton;
 
+    @FindBy(css = "[class='btn btn-primary']")
+    private WebElement successCreatAccountContinueButton;
+
+    @FindBy(xpath = "//h2[text()='My Orders']")
+    private WebElement myOrderVisible;
+
     public WebElement getMyAccountButton() {
         return myAccountButton;
     }
@@ -92,5 +98,13 @@ public class RegisterPageElements extends MyMethods {
 
     public WebElement getRegisterContinueButton() {
         return registerContinueButton;
+    }
+
+    public WebElement getSuccessCreatAccountContinueButton(){
+        return successCreatAccountContinueButton;
+    }
+
+    public WebElement getMyOrderVisible(){
+        return myOrderVisible;
     }
 }

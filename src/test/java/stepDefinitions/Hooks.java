@@ -16,7 +16,7 @@ public class Hooks {
         System.out.println("Scenario has started");
     }
 
-    @After // This method runs after every scenario
+/*    @After // This method runs after every scenario
     public void afterScenario(Scenario scenario){
 
         if(scenario.isFailed()){
@@ -27,7 +27,7 @@ public class Hooks {
         }
         BaseDriver.quitDriver();
         System.out.println("Scenario has ended");
-    }
+    }*/
 
 //    @After // This method runs after every scenario
 //    public void afterScenario(){

@@ -16,13 +16,15 @@ public class BaseDriver {
     public static WebDriver getDriver() {
 
         if (driver == null) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*"); // To solve the error with Chrome v111
-            System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver(options);
-            driver.manage().window().maximize();
+            ChromeOptions opt = new ChromeOptions();
+            opt.addArguments("--remote-allow-origins=*");
+            opt.setBinary("C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe");
+            System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+            driver = new ChromeDriver(opt);
         }
+        driver.manage().window().maximize();
+
         return driver;
     }
 
