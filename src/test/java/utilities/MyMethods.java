@@ -60,7 +60,6 @@ public class MyMethods {
         waitUntilVisible(element);
         Assert.assertTrue(element.isDisplayed());
     }
-
     public void verifyURL(String value){
         Assert.assertTrue(BaseDriver.getDriver().getCurrentUrl().contains(value));
     }
