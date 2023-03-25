@@ -51,12 +51,12 @@ public class MyMethods {
         Assert.assertTrue(actualValue.contains(expectedValue));
     }
 
-    public void verifyIsSelected(WebElement element) {
+    public void verifyIsSelected(WebElement element){
         waitUntilVisible(element);
         Assert.assertTrue(element.isSelected(), "Test is failed");
     }
 
-    public void isDisplayed(WebElement element) {
+    public void isDisplayed(WebElement element){
         waitUntilVisible(element);
         Assert.assertTrue(element.isDisplayed());
     }
