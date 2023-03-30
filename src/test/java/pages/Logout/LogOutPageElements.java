@@ -1,5 +1,6 @@
 package pages.Logout;
 
+import org.checkerframework.checker.signature.qual.FieldDescriptor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,7 +13,15 @@ public class LogOutPageElements extends MyMethods {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id='column-right']/div/a[13])")
+    @FindBy(css = "#input-email")
+    private WebElement loginEmailInput;
+
+    @FindBy (css = "#input-password")
+    private WebElement loginPasswordInput;
+    @FindBy(xpath = "//input[@type='submit']")
+    private WebElement loginButton;
+
+    @FindBy(xpath = "(//div[@class='list-group']/a)[13]")
     private WebElement logOutButton;
 
     @FindBy(xpath = "//div[@id='content']/p[1]")
@@ -37,8 +46,6 @@ public class LogOutPageElements extends MyMethods {
 
     @FindBy(xpath = "(//*[text()='Login'])[1]")
     private WebElement loginFromDropDown;
-    @FindBy(xpath = "//input[@type='submit']")
-    private WebElement loginButton;
 
     public WebElement getLogOutButton() {
         return logOutButton;
@@ -76,8 +83,17 @@ public class LogOutPageElements extends MyMethods {
         return loginFromDropDown;
     }
 
+    public WebElement getLoginEmailInput() {
+        return loginEmailInput;
+    }
+
+    public WebElement getLoginPasswordInput() {
+        return loginPasswordInput;
+    }
+
     public WebElement getLoginButton() {
         return loginButton;
+
     }
 }
 
