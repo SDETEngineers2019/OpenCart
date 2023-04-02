@@ -13,6 +13,12 @@ public class LogOutPageElements extends MyMethods {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//span[text()='My Account']")
+    private WebElement myAccountButton;
+
+    @FindBy(xpath = "//a[text()='Login']")
+    private WebElement loginButtonOnHomePage;
+
     @FindBy(css = "#input-email")
     private WebElement loginEmailInput;
 
@@ -46,6 +52,14 @@ public class LogOutPageElements extends MyMethods {
 
     @FindBy(xpath = "(//*[text()='Login'])[1]")
     private WebElement loginFromDropDown;
+
+    public WebElement getMyAccountButton() {
+        return myAccountButton;
+    }
+
+    public WebElement getLoginButtonOnHomePage() {
+        return loginButtonOnHomePage;
+    }
 
     public WebElement getLogOutButton() {
         return logOutButton;
