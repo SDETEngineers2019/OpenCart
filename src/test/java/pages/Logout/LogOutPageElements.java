@@ -55,10 +55,12 @@ public class LogOutPageElements extends MyMethods {
 
     public WebElement getMyAccountButton() {
         return myAccountButton;
+
     }
 
     public WebElement getLoginButtonOnHomePage() {
         return loginButtonOnHomePage;
+
     }
 
     public WebElement getLogOutButton() {
@@ -110,4 +112,3 @@ public class LogOutPageElements extends MyMethods {
 
     }
 }
-
