@@ -14,9 +14,11 @@ public class LogOutPageElements extends MyMethods {
     }
 
     @FindBy(xpath = "//span[text()='My Account']")
+
     private WebElement myAccountButton;
 
     @FindBy(xpath = "//a[text()='Login']")
+
     private WebElement loginButtonOnHomePage;
 
     @FindBy(css = "#input-email")
@@ -54,12 +56,16 @@ public class LogOutPageElements extends MyMethods {
     private WebElement loginFromDropDown;
 
     public WebElement getMyAccountButton() {
+
         return myAccountButton;
+
 
     }
 
     public WebElement getLoginButtonOnHomePage() {
+
         return loginButtonOnHomePage;
+
 
     }
 
