@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
 import utilities.MyMethods;
 
-public class wishListPageElements extends MyMethods {
+public class WishListPageElements extends MyMethods {
 
-    public wishListPageElements() {
+    public WishListPageElements() {
         PageFactory.initElements(BaseDriver.getDriver(),this);
     }
 
