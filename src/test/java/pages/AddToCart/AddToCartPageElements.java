@@ -51,6 +51,39 @@ public class AddToCartPageElements extends MyMethods {
     @FindBy(xpath = "//strong[contains(.,'View Cart') and .//i[contains(@class,'fa-shopping-cart')]]") //  view cart option in the displayed box
     private WebElement viewCartOptionInDisplayedBox;
 
+    @FindBy(xpath = "//a[text()='Apple Cinema 30\"']")   // the product displayed when Apple Cinema 30" is searched for in the search box at homepage
+    private WebElement searchProductAppleCinema30;
+
+    @FindBy(xpath = "(//span[text()='Add to Cart'])[1]") // add to cart button in the related products section of the displayed Product Display page
+    private WebElement AddToCartButtonRelatedProductsSection;
+
+    @FindBy(css = "div[class='alert alert-danger alert-dismissible']") // add to cart button in the related products section of the displayed Product Display page
+    private WebElement alertMessageForNotEnoughQuantity;
+
+    @FindBy(xpath = "//a[text()='Desktops']") // Desktops menu option at home page
+    private WebElement desktopsMenuOption;
+
+    @FindBy(xpath = "//a[text()='Show All Desktops']") // Show All Desktops under the Desktops menu option at home page
+    private WebElement showAllDesktops;
+
+    @FindBy(xpath = "//a[contains(@href,'product/category') and contains(text(),'- Mac (1)')]") // Mac subcategory option from the left side options
+    private WebElement macProductLink;
+
+    @FindBy(xpath = "//button[contains(@onclick,'cart.add')]") // add to cart button in the Category or Sub-category page
+    private WebElement addToCartButtonInCategory;
+
+    @FindBy(xpath = "//button[contains(@onclick, \"cart.add('30')\")]") // add to cart button in the Featured section on home page
+    private WebElement addToCartButtonInFeaturedSection;
+
+    @FindBy(xpath = "//button[@data-original-title='Compare this Product']") // compare this product button
+    private WebElement compareThisProductButton;
+
+    @FindBy(xpath = "//a[text()='product comparison']") // product comparison button on the success message when adding a product to the comparison functionality
+    private WebElement productComparisonLinkOnSuccessMessage;
+
+    @FindBy(xpath = "//input[@value='Add to Cart']") // add to cart button on product comparison page
+    private WebElement addToCartButtonOnProductComparisonPage;
+
     public WebElement getSearchBox() {
         return searchBox;
     }
@@ -101,5 +134,49 @@ public class AddToCartPageElements extends MyMethods {
 
     public WebElement getViewCartOptionInDisplayedBox() {
         return viewCartOptionInDisplayedBox;
+    }
+
+    public WebElement getSearchProductAppleCinema30() {
+        return searchProductAppleCinema30;
+    }
+
+    public WebElement getAddToCartButtonRelatedProductsSection() {
+        return AddToCartButtonRelatedProductsSection;
+    }
+
+    public WebElement getAlertMessageForNotEnoughQuantity() {
+        return alertMessageForNotEnoughQuantity;
+    }
+
+    public WebElement getDesktopsMenuOption() {
+        return desktopsMenuOption;
+    }
+
+    public WebElement getShowAllDesktops() {
+        return showAllDesktops;
+    }
+
+    public WebElement getMacProductLink() {
+        return macProductLink;
+    }
+
+    public WebElement getAddToCartButtonInCategory() {
+        return addToCartButtonInCategory;
+    }
+
+    public WebElement getAddToCartButtonInFeaturedSection() {
+        return addToCartButtonInFeaturedSection;
+    }
+
+    public WebElement getCompareThisProductButton() {
+        return compareThisProductButton;
+    }
+
+    public WebElement getProductComparisonLinkOnSuccessMessage() {
+        return productComparisonLinkOnSuccessMessage;
+    }
+
+    public WebElement getAddToCartButtonOnProductComparisonPage() {
+        return addToCartButtonOnProductComparisonPage;
     }
 }
