@@ -71,8 +71,91 @@ public class ProductCompareWebElements {
     @FindBy(xpath = "//*[@id=\"product-compare\"]/ul/li[2]/a")// product compare page link
     private WebElement productComparePageLink;
 
+    public WebElement getSearchBox() {
+        return searchBox;
+    }
 
+    public WebElement getSearchBoxButton() {
+        return searchBoxButton;
+    }
 
+    public WebElement getImacProduct() {
+        return imacProduct;
+    }
 
+    public WebElement getCompareProductButton() {
+        return compareProductButton;
+    }
 
+    public WebElement getSuccessMessage() {
+        return successMessage;
+    }
+
+    public WebElement getListButton() {
+        return ListButton;
+    }
+
+    public WebElement getProductCompare1() {
+        return productCompare1;
+    }
+
+    public WebElement getGridButton() {
+        return gridButton;
+    }
+
+    public WebElement getDesktopButton() {
+        return desktopButton;
+    }
+
+    public WebElement getShowAllDesktop() {
+        return showAllDesktop;
+    }
+
+    public WebElement getProductComparisonLink() {
+        return productComparisonLink;
+    }
+
+    public WebElement getProductCompare2() {
+        return productCompare2;
+    }
+
+    public WebElement getProductCompare0() {
+        return productCompare0;
+    }
+
+    public WebElement getContinueButton() {
+        return continueButton;
+    }
+
+    public WebElement getImacImg() {
+        return imacImg;
+    }
+
+    public WebElement getIphoneImg() {
+        return iphoneImg;
+    }
+
+    public WebElement getMacbookAirImg() {
+        return macbookAirImg;
+    }
+
+    public WebElement getMacbookImg() {
+        return macbookImg;
+    }
+
+    public WebElement getMacbookProImg() {
+        return macbookProImg;
+    }
+
+    public WebElement getAddToCartButton() {
+        return addToCartButton;
+    }
+
+    public WebElement getImacRemoveButton() {
+        return imacRemoveButton;
+    }
+
+    public WebElement getProductComparePageLink() {
+        return productComparePageLink;
+    }
 }
