@@ -179,4 +179,5 @@ public class AddToCartPageElements extends MyMethods {
     public WebElement getAddToCartButtonOnProductComparisonPage() {
         return addToCartButtonOnProductComparisonPage;
     }
+
 }
