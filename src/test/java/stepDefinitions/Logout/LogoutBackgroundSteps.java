@@ -11,15 +11,7 @@ import utilities.BaseDriver;
 public class LogoutBackgroundSteps {
 
     LogOutPageElements lp = new LogOutPageElements();
-    @Given("Navigate to the web site")
-    public void navigateToTheWebSite() {
-        BaseDriver.getDriver().get("http://opencart.abstracta.us/index.php?route=common/home");
-    }
 
-    @When("Click on My Account button")
-    public void clickOnMyAccountButton() {
-        lp.clickMethod(lp.getMyAccountButton());
-    }
 
     @And("Click on Login button on home page")
     public void clickOnLoginButtonOnHomePage() {
