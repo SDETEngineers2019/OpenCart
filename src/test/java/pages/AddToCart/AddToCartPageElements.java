@@ -51,4 +51,55 @@ public class AddToCartPageElements extends MyMethods {
     @FindBy(xpath = "//strong[contains(.,'View Cart') and .//i[contains(@class,'fa-shopping-cart')]]") //  view cart option in the displayed box
     private WebElement viewCartOptionInDisplayedBox;
 
+    public WebElement getSearchBox() {
+        return searchBox;
+    }
+
+    public WebElement getSearchIcon() {
+        return searchIcon;
+    }
+
+    public WebElement getSearchProductIMac() {
+        return searchProductIMac;
+    }
+
+    public WebElement getAddToCartButtonInDisplayedProductPage() {
+        return AddToCartButtonInDisplayedProductPage;
+    }
+
+    public WebElement getSuccessMessageForAddToCartButton() {
+        return successMessageForAddToCartButton;
+    }
+
+    public WebElement getShoppingCartLinkInSuccessMessage() {
+        return shoppingCartLinkInSuccessMessage;
+    }
+
+    public WebElement getImageOfProductAddedToCart() {
+        return imageOfProductAddedToCart;
+    }
+
+    public WebElement getWishListHeaderOption() {
+        return wishListHeaderOption;
+    }
+
+    public WebElement getAddToCartIconOnMyWishListPage() {
+        return addToCartIconOnMyWishListPage;
+    }
+
+    public WebElement getShoppingCartHeaderOption() {
+        return shoppingCartHeaderOption;
+    }
+
+    public WebElement getAddToCartButtonInSearchResults() {
+        return AddToCartButtonInSearchResults;
+    }
+
+    public WebElement getCartButtonInBlackColor() {
+        return CartButtonInBlackColor;
+    }
+
+    public WebElement getViewCartOptionInDisplayedBox() {
+        return viewCartOptionInDisplayedBox;
+    }
 }
