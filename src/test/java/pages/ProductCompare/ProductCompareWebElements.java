@@ -2,6 +2,7 @@ package pages.ProductCompare;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.MyMethods;
 
 public class ProductCompareWebElements {
 
