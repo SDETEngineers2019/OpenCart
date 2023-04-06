@@ -2,8 +2,9 @@ package pages.ProductCompare;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.MyMethods;
 
-public class ProductCompareWebElements {
+public class ProductCompareWebElements extends MyMethods {
 
     @FindBy(xpath = "//input[@placeholder='Search']")
     private WebElement searchBox;
@@ -70,6 +71,12 @@ public class ProductCompareWebElements {
 
     @FindBy(xpath = "//*[@id=\"product-compare\"]/ul/li[2]/a")// product compare page link
     private WebElement productComparePageLink;
+
+    @FindBy(xpath = "//a[text()='Product Compare (0)']") // product compare(0)
+    private WebElement productCompareZeroItem;
+
+    @FindBy(xpath = "//div[@id='content']/p")
+    private WebElement shoppingCartEmptyMessage;
 
     public WebElement getSearchBox() {
         return searchBox;
@@ -157,5 +164,13 @@ public class ProductCompareWebElements {
 
     public WebElement getProductComparePageLink() {
         return productComparePageLink;
+    }
+
+    public WebElement getProductCompareZeroItem() {
+        return productCompareZeroItem;
+    }
+
+    public WebElement getShoppingCartEmptyMessage() {
+        return shoppingCartEmptyMessage;
     }
 }
