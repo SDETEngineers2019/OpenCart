@@ -33,11 +33,22 @@ public class SearchBoxPageElements extends MyMethods {
     @FindBy(xpath = "//a[text()='Search']")
     private WebElement searchBreadCrumb;
 
+
+    @FindBy(css = "body:nth-child(2) div.container:nth-child(4) div.row div.col-sm-12 > p:nth-child(7)")
+    private WebElement yourShoppingCartIsEmptyMessage;
+
+
+    public WebElement getYourShoppingCartIsEmptyMessage(){
+        return yourShoppingCartIsEmptyMessage;
+    }
+
+
     @FindBy (xpath = "//img[@class='img-responsive']")
     private WebElement imacImage;
 
     @FindBy (css = "div[class='product-thumb']")
     private List<WebElement> listOfElementAfterSearch;
+
     public WebElement getSearchBox() {
         return searchBox;
     }
