@@ -11,7 +11,7 @@ Feature:Logout
 
     And Click on Logout option from the Right Column
     And Click on Continue button for logout
-  #  Then Validate you are at the home page
+    Then Validate you are at the home page
 
 Scenario: Validate Account Logout page
   And Click on My Account button
