@@ -4,8 +4,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
+import utilities.MyMethods;
 
-public class SearchBoxPageElements {
+import java.util.List;
+
+public class SearchBoxPageElements extends MyMethods {
 
     public SearchBoxPageElements() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
@@ -30,6 +33,11 @@ public class SearchBoxPageElements {
     @FindBy(xpath = "//a[text()='Search']")
     private WebElement searchBreadCrumb;
 
+    @FindBy (xpath = "//img[@class='img-responsive']")
+    private WebElement imacImage;
+
+    @FindBy (css = "div[class='product-thumb']")
+    private List<WebElement> listOfElementAfterSearch;
     public WebElement getSearchBox() {
         return searchBox;
     }
@@ -60,6 +68,16 @@ public class SearchBoxPageElements {
 
     public WebElement getSearchBreadCrumb() {
         return searchBreadCrumb;
+    }
+
+    public List<WebElement> getListOfElementAfterSearch() {
+        return listOfElementAfterSearch;
+
+
+    }
+
+    public WebElement getImacImage() {
+        return imacImage;
     }
 }
 
