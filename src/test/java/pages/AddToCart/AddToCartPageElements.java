@@ -180,4 +180,6 @@ public class AddToCartPageElements extends MyMethods {
         return addToCartButtonOnProductComparisonPage;
     }
 
+
+
 }
