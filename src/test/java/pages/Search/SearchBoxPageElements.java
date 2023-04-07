@@ -30,6 +30,14 @@ public class SearchBoxPageElements {
     @FindBy(xpath = "//a[text()='Search']")
     private WebElement searchBreadCrumb;
 
+    @FindBy(css = "body:nth-child(2) div.container:nth-child(4) div.row div.col-sm-12 > p:nth-child(7)")
+    private WebElement yourShoppingCartIsEmptyMessage;
+
+
+    public WebElement getYourShoppingCartIsEmptyMessage(){
+        return yourShoppingCartIsEmptyMessage;
+    }
+
     public WebElement getSearchBox() {
         return searchBox;
     }
