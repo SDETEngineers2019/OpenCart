@@ -4,8 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BaseDriver;
+import utilities.MyMethods;
 
-public class HomePageElements {
+public class HomePageElements extends MyMethods {
 
     public HomePageElements() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
